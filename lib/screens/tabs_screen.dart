@@ -47,6 +47,7 @@ class _TabsScreenState extends State<TabsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_screens[_selectedScreenIndex]['Title']),
+        backgroundColor: Colors.blue,
       ),
       drawer: AppDrawer(),
       body: _screens[_selectedScreenIndex]['Screen'],
