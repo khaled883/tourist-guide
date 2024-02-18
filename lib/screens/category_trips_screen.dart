@@ -54,6 +54,7 @@ class _CategoryTripsScreenState extends State<CategoryTripsScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text(
           categoryTitle!,
         ),
@@ -72,6 +73,7 @@ class _CategoryTripsScreenState extends State<CategoryTripsScreen> {
         },
         itemCount: displayTrips.length,
       ),
+      backgroundColor: Colors.white,//edit
     );
   }
 }

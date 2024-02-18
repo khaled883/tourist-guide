@@ -44,6 +44,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Theme.of(context).primaryColor,//edit
           title: Text('الفلترة'),
           actions: [
             IconButton(
@@ -68,6 +69,8 @@ class _FiltersScreenState extends State<FiltersScreen> {
               child: ListView(
                 children: [
                   SwitchListTile(
+                    activeTrackColor: Colors.amber,//edit
+                    inactiveTrackColor: Colors.red,
                     title: Text('الرحلات الصيفية'),
                     subtitle: Text('اظهار الرحلات الصيفية فقط'),
                     value: _summer,
@@ -80,6 +83,8 @@ class _FiltersScreenState extends State<FiltersScreen> {
                     },
                   ),
                   SwitchListTile(
+                    activeTrackColor: Colors.amber,//edit
+                    inactiveTrackColor: Colors.red,
                     title: Text('الرحلات الشتوية'),
                     subtitle: Text('اظهار الرحلات الشتوية فقط'),
                     value: _winter,
@@ -92,6 +97,8 @@ class _FiltersScreenState extends State<FiltersScreen> {
                     },
                   ),
                   SwitchListTile(
+                    activeTrackColor: Colors.amber,//edit
+                    inactiveTrackColor: Colors.red,
                     title: Text('الرحلات العائلية'),
                     subtitle: Text('اظهار الرحلات الخاصة بالعائلات فقط'),
                     value: _family,
@@ -107,6 +114,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
               ),
             )
           ],
-        ));
+        ),backgroundColor: Colors.white,
+        );
   }
 }

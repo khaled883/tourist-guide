@@ -44,6 +44,7 @@ class TripDetailScreen extends StatelessWidget {
     final selectedTrip = Trips_data.firstWhere((trip) => trip.id == tripId);
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text('${selectedTrip.title}'),
       ),
       body: SingleChildScrollView(
@@ -95,7 +96,7 @@ class TripDetailScreen extends StatelessWidget {
             )
           ],
         ),
-      ),
+      ),backgroundColor: Colors.white,
       floatingActionButton: FloatingActionButton(
         //This is a floating button in the trip details screen to
         //delete the current journey and return to the previous screen
